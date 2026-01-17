@@ -1,0 +1,10 @@
+.footer footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  background: linear-gradient(90deg, #2b0f3a, #3b1454, #2b0f3a);
+  color: #f6e8ff;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+}

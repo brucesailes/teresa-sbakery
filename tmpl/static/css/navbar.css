@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(90deg, #2b0f3a, #3b1454, #2b0f3a);
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.navbar::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  scrollbar-width: none; /* Firefox */
+}
+
+.navbar a {
+  color: #f6e8ff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.navbar a:hover {
+  color: #ff9ad5; /* warm pink */
+  text-shadow: 0 0 6px rgba(255, 154, 213, 0.6);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    gap: 1rem;
+    padding-inline: 0.75rem;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .navbar a {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+  }
+}
