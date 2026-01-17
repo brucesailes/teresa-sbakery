@@ -5,7 +5,7 @@ body {
   min-height: 100vh;
   font-family: "Georgia", "Times New Roman", serif;
   overflow-x: hidden;
-  background: #f7f1f7; 
+  background: #f7f1f7;
   color: #ffffff;
 }
 
@@ -29,11 +29,8 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.35)
-    ),
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.35)),
     radial-gradient(
       circle at center,
       rgba(255, 154, 213, 0.12),
@@ -136,6 +133,13 @@ body {
 }
 
 /* Mobile */
+
+@media (max-width: 600px) {
+  .content-container {
+    background-image: url("/static/img/aboutus-mobile.jpg");
+  }
+}
+
 @media (max-width: 768px) {
   .content-container {
     padding: 1.5rem 1rem;

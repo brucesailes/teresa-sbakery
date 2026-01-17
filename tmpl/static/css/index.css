@@ -55,7 +55,7 @@ body {
   letter-spacing: 0.25em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
-  color: #f3e6ff; /* soft lavender */
+  color: #f3e6ff; 
 }
 
 #hero-header2 {
@@ -93,4 +93,10 @@ body {
 
 #hero-button:active {
   transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    background-image: url("/static/img/herosectionbg-mobile.jpg"); 
+  }
 }
