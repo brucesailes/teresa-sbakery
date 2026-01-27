@@ -50,7 +50,7 @@ body {
   text-align: center;
   color: #fff;
 
-  font-size: clamp(2rem, 4.2vw, 3.2rem);
+  font-size: clamp(1.6rem, 4.2vw, 3.2rem);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
@@ -210,7 +210,7 @@ img.menu-img {
   }
 
   #header-text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     letter-spacing: 0.06em;
   }
 

@@ -54,12 +54,11 @@ func main() {
 		w.Write(data)
 	})
 
-	// ✅ Fly uses PORT env var; default to 8080
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "8080"
 	}
 
-	log.Printf("Listening on http://0.0.0.0:%s/", port)
+	log.Printf("Listening on http://localhost:8080")
 	log.Fatal(http.ListenAndServe("0.0.0.0:"+port, r))
 }
